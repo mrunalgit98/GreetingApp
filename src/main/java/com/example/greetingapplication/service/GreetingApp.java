@@ -7,4 +7,7 @@ public class GreetingApp {
         return "Hello";
     }
 
+    public static String messageByName(String fname, String lname){
+        return "Hello " + fname + " " + lname;
+    }
 }

@@ -24,4 +24,11 @@ public class GreetingController {
     public String getMessage(){
         return GreetingApp.getMessage();
 }
+//uc3
+
+    @GetMapping("/name/{fname}/{lname}")
+    public String getname(@PathVariable String fname,@PathVariable String lname){
+        return GreetingApp.messageByName(fname,lname);
+    }
+
 }
